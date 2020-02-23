@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MenuLateral from './componentes/menu-lateral';
+import './include/bootstrap';
+import Conteudo from './componentes/conteudo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <MenuLateral name={"Clei"} />
+        <Conteudo></Conteudo>
       </header>
     </div>
   );
