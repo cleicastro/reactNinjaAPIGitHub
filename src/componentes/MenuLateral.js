@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class appTeste extends Component {
+class MenuLateral extends Component {
     render() {
         return (
             <div>
@@ -10,5 +10,5 @@ class appTeste extends Component {
     }
 }
 
-export default { appTeste }
+export default { MenuLateral }
 
