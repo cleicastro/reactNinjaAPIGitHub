@@ -1,14 +1,15 @@
 import React from 'react'
 import logo from '../logo.svg';
-import {LikeButton, DesLikeButton} from './like-button';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import StateTeste from './state';
 
-
-const Square = ({color}) => (
+const Square = ({ color, children }) => (
   <div style={{
     backgroundColor: color,
-    
+
   }}>
-    <img src={logo} className="App-logo"  alt="logo"/>
+    <img src={logo} className="App-logo" alt="logo" />
+    {children}
   </div>
 )
 Square.defaultProps = {
@@ -16,26 +17,34 @@ Square.defaultProps = {
 }
 
 const Conteudo = () => (
+  <Router>
     <div>
-        {['green'].map((square, index) => (
-          <Square key={index} color={square}/>
-        ))}       
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      {['green'].map((square, index) => (
+        <Square key={index} color={square} />
+      ))}
+
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <a
+        className="App-link"
+        href="/conteudo"
+      >
+        Learn React
         </a>
-        <p />
-        <LikeButton></LikeButton>
-        <DesLikeButton></DesLikeButton>
+      <p />
+      
+      <Switch>
+          <Route exact path="/">
+          </Route>
+          <Route path="/Conteudo">
+            <StateTeste />
+          </Route>          
+        </Switch>
+
     </div>
+  </Router>
+
 )
 
-export default Conteudo
+export { Conteudo, Square }
