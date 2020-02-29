@@ -20,7 +20,7 @@ class App extends Component {
     }
   }
 
-  getGitHubApiUrlr(username, tipo){
+  getGitHubApiUrlr(username, tipo) {
     const internalUser = username ? `/${username}` : '';
     const internalTipo = tipo ? `/${tipo}` : ''
     return `http://api.github.com/users${internalUser}${internalTipo}`
@@ -46,13 +46,16 @@ class App extends Component {
           this.setState({ repos: [] })
           this.setState({ starred: [] })
         })
+        .catch((e, x) => {
+          x.status === 404 && alert("Usuário não encontrado")
+        })
     }
   }
 
   getRepos(tipo) {
     const user = this.state.userinfo.login
     return (e) => {
-      ajax().get(this.getGitHubApiUrlr(user,tipo))
+      ajax().get(this.getGitHubApiUrlr(user, tipo))
         .then((result) => {
           this.setState({
             [tipo]: result.map((repo) => ({
