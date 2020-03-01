@@ -18,6 +18,7 @@
 [0223/075204.461:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0223/075204.461:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0223/075204.461:ERROR:crash_report_database_win.cc(469)] failed to stat report
+<<<<<<< HEAD
 [0223/150721.698:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0223/150721.699:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0223/150721.699:ERROR:crash_report_database_win.cc(469)] failed to stat report
@@ -33,3 +34,25 @@
 [0225/095334.313:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0225/095334.313:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0225/095334.313:ERROR:crash_report_database_win.cc(469)] failed to stat report
+=======
+[0226/211654.570:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0226/211654.573:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0226/211654.573:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0226/211654.573:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0226/211654.573:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/120518.839:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/120518.842:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/120518.842:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/120518.842:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/120518.842:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/150544.754:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/150544.756:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/150544.756:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/150544.756:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0229/150544.757:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0301/093411.602:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0301/093411.603:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0301/093411.603:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0301/093411.604:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0301/093411.604:ERROR:crash_report_database_win.cc(469)] failed to stat report
+>>>>>>> gitHubApp
