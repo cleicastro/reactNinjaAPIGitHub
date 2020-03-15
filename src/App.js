@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './include/bootstrap';
 import AppContent from './components/app-content';
 import ajax from '@fdaciuk/ajax';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
@@ -78,6 +79,10 @@ class App extends Component {
           handleSearch={(e) => this.handleSearch(e)}
           getRepos={this.getRepos('repos')}
           getFav={this.getRepos('starred')} />
+          <Link to="/hello">
+            <button style={{marginLeft:'10px'}}>Aula de reducer</button>
+          </Link>
+          
       </div>
     )
   }

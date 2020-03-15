@@ -25,3 +25,89 @@ ul {
     margin: 0px;
     display: block;
 }
+
+
+
+
+
+
+/*Desconsidere essa parte, é apenas para o snippets do SOpt*/
+div {
+    position: absolute;
+      left: 20%;
+    }
+  /*Desconsidere essa parte, é apenas para o snippets do SOpt*/
+  
+  div.tooltips {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+  }
+  div.tooltips span {
+    position: absolute;
+    width:160px;
+    color: #FFFFFF;
+    background: #000;
+    /* height: 30px; */
+    /* line-height: 49px; */
+    text-align: center;
+    visibility: hidden;
+
+    /* ADICIONA O EFEITO DE ENTRADA */
+    opacity: 0;
+    transition: all .4s ease;
+  }
+  div.tooltip:before {
+    content: attr(data-title);
+    background-color: #000;
+    color: #FFF;
+    font-size: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 250px;
+    opacity: 0;
+    transition: all .4s ease;    
+  }
+  div.tooltips span.bottom:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-bottom: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;        
+  }
+  div.tooltips span.bottom {
+    visibility: visible;
+    opacity: 0.9;
+    top: 30px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 999;
+  }
+
+  div.tooltips span.top:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-top: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;        
+  }
+  div.tooltips span.top {
+    visibility: visible;
+    opacity: 0.9;
+    top: -40px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 999;
+  }

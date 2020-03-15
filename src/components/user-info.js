@@ -6,7 +6,7 @@ const UserInfo = ({ Userinfo }) => (
         <img src={Userinfo.photo} className="foto-perfil mb-4 col-4" />
         <div className="user-info mb-4 ml-4">
             <h1 className="user">
-                <a target="_blank" href={`https://github.com/${Userinfo.login}`}>{Userinfo.username}</a>
+                <a href={`https://github.com/${Userinfo.login}`}>{Userinfo.username}</a>
             </h1>
             <ul className="repos-info">
                 <li>Repositórios: {Userinfo.repos}</li>
